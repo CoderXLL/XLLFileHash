@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "XLLFileHash"
-  s.version      = "1.1.1"
+  s.version      = "1.1.2"
   s.summary      = "A short description of XLLFileHash."
 
   # This description is used to generate tags and improve search results.
@@ -106,7 +106,8 @@ Pod::Spec.new do |s|
   #
 
   s.subspec 'Core' do |ss|
-        ss.source_files = 'XLLFileHash/*.{h,a}'
+        ss.source_files = 'XLLFileHash/*.{h}'
+        ss.vendored_libraries = "XLLFileHash/XLLFileHash.a"
   end
 
   # s.resource  = "icon.png"
