@@ -106,7 +106,7 @@ Pod::Spec.new do |s|
   #
 
   s.subspec 'Core' do |ss|
-        ss.source_files = 'XLLFileHash/*{h,a}'
+        ss.source_files = 'XLLFileHash/*.{h,a}'
   end
 
   # s.resource  = "icon.png"
