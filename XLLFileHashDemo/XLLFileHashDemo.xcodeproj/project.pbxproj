@@ -16,7 +16,7 @@
 		A921E4B01FEE02D200116F88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A921E4AF1FEE02D200116F88 /* main.m */; };
 		A921E4BA1FEE02D200116F88 /* XLLFileHashDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A921E4B91FEE02D200116F88 /* XLLFileHashDemoTests.m */; };
 		A921E4C51FEE02D200116F88 /* XLLFileHashDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A921E4C41FEE02D200116F88 /* XLLFileHashDemoUITests.m */; };
-		A921E4D81FEE041D00116F88 /* XLLFileHash.m in Sources */ = {isa = PBXBuildFile; fileRef = A921E4D71FEE041D00116F88 /* XLLFileHash.m */; };
+		A921E4F31FEE1D8F00116F88 /* XLLFileHash.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A921E4F21FEE1D8F00116F88 /* XLLFileHash.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +55,7 @@
 		A921E4C41FEE02D200116F88 /* XLLFileHashDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLLFileHashDemoUITests.m; sourceTree = "<group>"; };
 		A921E4C61FEE02D200116F88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A921E4D61FEE041D00116F88 /* XLLFileHash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLLFileHash.h; sourceTree = "<group>"; };
-		A921E4D71FEE041D00116F88 /* XLLFileHash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLLFileHash.m; sourceTree = "<group>"; };
+		A921E4F21FEE1D8F00116F88 /* XLLFileHash.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = XLLFileHash.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A921E4F31FEE1D8F00116F88 /* XLLFileHash.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,8 +143,8 @@
 		A921E4D21FEE03F200116F88 /* XLLFileHash */ = {
 			isa = PBXGroup;
 			children = (
+				A921E4F21FEE1D8F00116F88 /* XLLFileHash.a */,
 				A921E4D61FEE041D00116F88 /* XLLFileHash.h */,
-				A921E4D71FEE041D00116F88 /* XLLFileHash.m */,
 			);
 			name = XLLFileHash;
 			path = ../../XLLFileHash;
@@ -283,7 +284,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A921E4A81FEE02D200116F88 /* XLLFileHashDemo.xcdatamodeld in Sources */,
-				A921E4D81FEE041D00116F88 /* XLLFileHash.m in Sources */,
 				A921E4A21FEE02D200116F88 /* ViewController.m in Sources */,
 				A921E4B01FEE02D200116F88 /* main.m in Sources */,
 				A921E49F1FEE02D200116F88 /* AppDelegate.m in Sources */,
