@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
    s.subspec 'Core' do |ss|
         ss.source_files = 'XLLFileHash/*.{h}'
-        ss.vendored_libraries = 'XLLFileHash/*.{a}'
+        ss.vendored_libraries = 'XLLFileHash/libXLLFileHash.a'
     end
  s.requires_arc = true
 
