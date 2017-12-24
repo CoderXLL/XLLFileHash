@@ -16,7 +16,7 @@
 		A921E4B01FEE02D200116F88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A921E4AF1FEE02D200116F88 /* main.m */; };
 		A921E4BA1FEE02D200116F88 /* XLLFileHashDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A921E4B91FEE02D200116F88 /* XLLFileHashDemoTests.m */; };
 		A921E4C51FEE02D200116F88 /* XLLFileHashDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A921E4C41FEE02D200116F88 /* XLLFileHashDemoUITests.m */; };
-		A9D40F4F1FEF50E900BAF288 /* libXLLFileHash.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D40F4E1FEF50E900BAF288 /* libXLLFileHash.a */; };
+		A9D40F951FEF57C500BAF288 /* libXLLFileHash.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D40F931FEF57C500BAF288 /* libXLLFileHash.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +54,8 @@
 		A921E4C01FEE02D200116F88 /* XLLFileHashDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XLLFileHashDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A921E4C41FEE02D200116F88 /* XLLFileHashDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLLFileHashDemoUITests.m; sourceTree = "<group>"; };
 		A921E4C61FEE02D200116F88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A921E4D61FEE041D00116F88 /* XLLFileHash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLLFileHash.h; sourceTree = "<group>"; };
-		A9D40F4E1FEF50E900BAF288 /* libXLLFileHash.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libXLLFileHash.a; sourceTree = "<group>"; };
+		A9D40F931FEF57C500BAF288 /* libXLLFileHash.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libXLLFileHash.a; sourceTree = "<group>"; };
+		A9D40F941FEF57C500BAF288 /* XLLFileHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLLFileHash.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9D40F4F1FEF50E900BAF288 /* libXLLFileHash.a in Frameworks */,
+				A9D40F951FEF57C500BAF288 /* libXLLFileHash.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +107,7 @@
 		A921E49C1FEE02D200116F88 /* XLLFileHashDemo */ = {
 			isa = PBXGroup;
 			children = (
-				A921E4D21FEE03F200116F88 /* XLLFileHash */,
+				A9D40F921FEF57C500BAF288 /* XLLFileHash */,
 				A921E49D1FEE02D200116F88 /* AppDelegate.h */,
 				A921E49E1FEE02D200116F88 /* AppDelegate.m */,
 				A921E4A01FEE02D200116F88 /* ViewController.h */,
@@ -140,14 +140,13 @@
 			path = XLLFileHashDemoUITests;
 			sourceTree = "<group>";
 		};
-		A921E4D21FEE03F200116F88 /* XLLFileHash */ = {
+		A9D40F921FEF57C500BAF288 /* XLLFileHash */ = {
 			isa = PBXGroup;
 			children = (
-				A9D40F4E1FEF50E900BAF288 /* libXLLFileHash.a */,
-				A921E4D61FEE041D00116F88 /* XLLFileHash.h */,
+				A9D40F931FEF57C500BAF288 /* libXLLFileHash.a */,
+				A9D40F941FEF57C500BAF288 /* XLLFileHash.h */,
 			);
-			name = XLLFileHash;
-			path = ../../XLLFileHash;
+			path = XLLFileHash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -453,6 +452,10 @@
 				DEVELOPMENT_TEAM = PXU4P5494Q;
 				INFOPLIST_FILE = XLLFileHashDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XLLFileHashDemo/XLLFileHash",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.IMMoveMobile.XLLFileHashDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -467,6 +470,10 @@
 				DEVELOPMENT_TEAM = PXU4P5494Q;
 				INFOPLIST_FILE = XLLFileHashDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XLLFileHashDemo/XLLFileHash",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.IMMoveMobile.XLLFileHashDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
