@@ -1,0 +1,5 @@
+target 'XLLFileHashTest' do
+
+pod 'XLLFileHash', '~> 1.1.4'
+
+end
